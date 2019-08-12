@@ -1,0 +1,72 @@
+* {
+	/*border: 1px solid blue;*/
+}
+
+
+.red {
+	/*border: 1px solid red;*/
+}
+
+.checkbox input {
+	margin-right: 10px;
+}
+
+.checkbox label {
+	width: 100%;
+	margin: 0px;
+}
+
+form {
+	width: 87%;
+	margin: auto;
+	/*background-color: pink;*/
+}
+
+.btn-search {
+	margin-top: 20px;
+}
+
+.form-group {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+h4 {
+	margin-bottom: 0px;
+	display: inline;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.home-page-content {
+/*	padding-top: 3%;*/
+	width: 100%;
+}
+
+select {
+	width: 15%;
+}
+
+.qmark {
+	width: 15px;
+}
+
+.info-text {
+	display: none;
+}
+
+.required {
+	color: red;
+}
+
+.checkbox-div {
+	float: left;
+	width: 33%;
+}
+
+.after-boxes {
+	clear: both;
+}

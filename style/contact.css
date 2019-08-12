@@ -1,0 +1,41 @@
+.beth {
+  border-left: 1px solid #8fbc8f;
+  border-right: 1px solid #8fbc8f;
+}
+
+.bio img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.bio h6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.bio h5 {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.bio p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*
+.page-title {
+  clear: both;
+  text-align: center;
+  margin-bottom: 4%;
+}
+*/
+
+h2 {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  margin-bottom: 3%;
+}

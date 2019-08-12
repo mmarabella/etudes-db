@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home-body.css">
+    <link rel="stylesheet" href="search.css">
+    <script src="search.js"> </script>
+    <title>Violin Etudes</title>
+  </head>
+  <body>
+    <div class="content container">
+      <div class="row header red">
+          <div class="col-sm-1 header-logo">
+            <a href="violin-etudes.html"><img src="logo2.png" alt="Page logo" id="logo"></a>
+          </div>
+          <div class="col-sm-11 header-content">
+            <div class="title-and-button container-fluid">
+              <h1><a href="violin-etudes.html">violin etudes</a></h1> 
+              <span>
+                <button type="button" class="login-button">Log In</button>
+              </span>
+            </div>
+
+            <nav class="navbar navbar-default navbar-expand-sm">
+              <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                  <li><a href="search2.html">SEARCH</a></li>
+                  <li><a href="discussion.html">DISCUSSION</a></li>
+                  <li><a href="contact2.html">CONTACT US</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </div>
+
+      <div class="row home-page-content">
+        <form action="https://fall-2018.cs.utexas.edu/cs329e-mitra/mem44/project-part5/search-results.php" method="get" id="searchForm" onsubmit="return validate();">
+          <h2>Search Etude Database</h2>
+          <div class="form-group">
+            <h4>Composer</h4> 
+              <span onmouseover="infoBox('composer-name');" onmouseout="infoBox('composer-name');">&#9432;</span>
+              <span class="info-text" id="composer-name">Composer name</span>
+            <input type="text" class="form-control" id="composer" name="composer">
+          </div>
+          <div class="form-group">
+            <h4>Title</h4>
+              <span onmouseover="infoBox('title-name');" onmouseout="infoBox('title-name');">&#9432;</span>
+              <span class="info-text" id="title-name">Title of etude</span>
+            <input type="text" class="form-control" id="title" name="title">
+          </div>
+          <h4>Technique</h4>
+              <span class="required">*</span>
+              <span onmouseover="infoBox('technique');" onmouseout="infoBox('technique');">&#9432;</span>
+              <span class="info-text" id="technique">Tequnique(s) for student to practice</span>
+          <div class="form-group">
+            <select name="technique[]" multiple="multiple">
+              <option value="trills">Trills</option>
+              <option value="shifting">Shifting</option>
+              <option value="string crossing">String Crossing</option>
+              <option value="scales">Scales</option>
+              <option value="double-stops">Double Stops</option>
+              <option value="harmonics">Harmonics</option>
+              <option value="slurs">Slurs</option>
+            </select>
+          </div>
+          <h4>Fields to display</h4>
+              <span class="required">*</span>
+              <span onmouseover="infoBox('display-fields');" onmouseout="infoBox('display-fields');">&#9432;</span>
+              <span class="info-text" id="display-fields">Information displayed by search</span>
+          <div class="checkbox form-group">
+            <label><input type="checkbox" name="field[]" class="field" value="composer">Composer</label>
+            <label><input type="checkbox" name="field[]" class="field" value="publication-date">Publication Date</label>
+            <label><input type="checkbox" name="field[]" class="field" value="book">Book</label>
+            <label><input type="checkbox" name="field[]" class="field" value="title">Title</label>
+            <label><input type="checkbox" name="field[]" class="field" value="link">Link to IMSLP</label>
+          </div>
+
+          <button type="submit" class="my-button">Search</button>
+        </form>
+      </div>
+
+      <div class="row footer">
+        <span> Page created by: <a href="mailto:mmarabella@utexas.edu">Madalyn Marabella</a> </span>
+        <span id="timestamp"> <script> document.write("This page was last modified on: " + document.lastModified +""); </script> </span>
+        <div id="citation">All images used are open source and do not require citation</div>
+      </div>
+    </div>
+  </body>
+</html>
